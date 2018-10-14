@@ -3,6 +3,7 @@ image: gradle:4.9-jdk8
 stages:
   - build
   - test
+  - deploy
 
 variables:
   GRADLE_OPTS: "-Dorg.gradle.daemon=false"
