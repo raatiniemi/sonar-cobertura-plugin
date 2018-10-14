@@ -1,9 +1,15 @@
+buildscript {
+    ext {
+        nextVersion = 'patch'
+    }
+}
+
 plugins {
     id 'java'
+    id 'com.cinnober.gradle.semver-git' version '2.3.1'
 }
 
 group 'me.raatiniemi.sonar'
-version '0.0.1-SNAPSHOT'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
