@@ -39,3 +39,10 @@ analyse:
     - gradle sonarqube
   only:
     - master
+
+deploy:
+  stage: deploy
+  script:
+    - gradle bintrayUpload
+  only:
+    - tags
