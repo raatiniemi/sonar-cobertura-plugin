@@ -7,3 +7,21 @@
 
 The repository is a SonarQube plugin for parsing reports from [cobertura](http://cobertura.github.io/cobertura/).
 *This is not a standalone plugin yet, i.e. it needs to be [embedded within another plugin](https://gitlab.com/raatiniemi/sonar-objective-c).*
+
+## Usage
+
+In order to include the code from this repository, you'll first need to add the
+repository.
+
+```gradle
+repositories {
+    maven {
+        url  "https://dl.bintray.com/raatiniemi/maven"
+    }
+}
+```
+
+And, then you need to declare it as a dependency using `compile 'me.raatiniemi.sonar:cobertura:$latestVersion'`.
+
+*Dependency examples are using Gradle, for additional dependency options you can
+checkout [sonar-cobertura-plugin at bintray](https://bintray.com/raatiniemi/maven/sonar-cobertura-plugin).*
