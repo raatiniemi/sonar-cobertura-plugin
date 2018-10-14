@@ -30,3 +30,12 @@ test:
   stage: test
   script:
     - gradle test
+  except:
+    - master
+
+analyse:
+  stage: test
+  script:
+    - gradle sonarqube
+  only:
+    - master
